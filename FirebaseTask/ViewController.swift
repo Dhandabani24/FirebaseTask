@@ -23,13 +23,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         let task = URLSession.shared.dataTask(with: url, completionHandler: { data, _, error in
             guard let data = data,error == nil else{ return}
-            
             DispatchQueue.main.async {
                 let image = UIImage(data: data)
                 self.uploadImg.image = image
             }
         })
         task.resume()
+    }
+    @IBAction func downloadBtnAct(_ sender: Any) {
+        // navigate to next VC
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ImgFolderViewController") as! ImgFolderViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func uploadImgBtnAct(_ sender: Any) {
@@ -48,12 +53,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             return
         }
         guard let imageData = image.pngData() else { return }
+     //   Upload image to Firebase DB
         storageref.child("images/file.png").putData(imageData, metadata: nil, completion:{
             _ , error in
-            
             guard error == nil else {
                 print("Failed to upload")
                 return}
+        //    Download all image from Firebase DB
             self.storageref.child("images/file.png").downloadURL(completion: {url, error in
                 guard let url = url,error == nil else{ return}
                 let urlString = url.absoluteString

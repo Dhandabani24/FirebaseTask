@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D6A1E692962B0C1001920D6 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6A1E682962B0C1001920D6 /* ImageCollectionViewCell.swift */; };
 		4D6E8E9A295D75AC00A1B15F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E8E99295D75AC00A1B15F /* AppDelegate.swift */; };
 		4D6E8E9C295D75AC00A1B15F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E8E9B295D75AC00A1B15F /* SceneDelegate.swift */; };
 		4D6E8E9E295D75AC00A1B15F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E8E9D295D75AC00A1B15F /* ViewController.swift */; };
@@ -17,9 +18,12 @@
 		4D6E8EB2295D91C500A1B15F /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4D6E8EB1295D91C500A1B15F /* FirebaseMessaging */; };
 		4D6E8EB4295D91C500A1B15F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4D6E8EB3295D91C500A1B15F /* FirebaseStorage */; };
 		4D6E8EB6295D993400A1B15F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E8EB5295D993400A1B15F /* GoogleService-Info.plist */; };
+		4DCFB97429633F8A0083A385 /* ImgFolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCFB97329633F8A0083A385 /* ImgFolderViewController.swift */; };
+		4DD169812962A812007625AE /* DbImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD169802962A812007625AE /* DbImagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D6A1E682962B0C1001920D6 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		4D6E8E96295D75AC00A1B15F /* FirebaseTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6E8E99295D75AC00A1B15F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D6E8E9B295D75AC00A1B15F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		4D6E8EA8295D75AF00A1B15F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D6E8EAA295D75AF00A1B15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D6E8EB5295D993400A1B15F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4DCFB97329633F8A0083A385 /* ImgFolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgFolderViewController.swift; sourceTree = "<group>"; };
+		4DD169802962A812007625AE /* DbImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbImagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,9 @@
 				4D6E8E99295D75AC00A1B15F /* AppDelegate.swift */,
 				4D6E8E9B295D75AC00A1B15F /* SceneDelegate.swift */,
 				4D6E8E9D295D75AC00A1B15F /* ViewController.swift */,
+				4DCFB97329633F8A0083A385 /* ImgFolderViewController.swift */,
+				4DD169802962A812007625AE /* DbImagesViewController.swift */,
+				4D6A1E682962B0C1001920D6 /* ImageCollectionViewCell.swift */,
 				4D6E8E9F295D75AC00A1B15F /* Main.storyboard */,
 				4D6E8EA5295D75AF00A1B15F /* Assets.xcassets */,
 				4D6E8EA7295D75AF00A1B15F /* LaunchScreen.storyboard */,
@@ -156,9 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D6A1E692962B0C1001920D6 /* ImageCollectionViewCell.swift in Sources */,
 				4D6E8E9E295D75AC00A1B15F /* ViewController.swift in Sources */,
+				4DCFB97429633F8A0083A385 /* ImgFolderViewController.swift in Sources */,
 				4D6E8EA4295D75AC00A1B15F /* FirebaseTask.xcdatamodeld in Sources */,
 				4D6E8E9A295D75AC00A1B15F /* AppDelegate.swift in Sources */,
+				4DD169812962A812007625AE /* DbImagesViewController.swift in Sources */,
 				4D6E8E9C295D75AC00A1B15F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
